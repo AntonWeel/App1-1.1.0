@@ -91,7 +91,6 @@ class App extends Component {
         })
 	}
 
-
 render() {
 	const {balance} = this.state;
 	const {outvalue} = this.state;
