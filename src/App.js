@@ -14,8 +14,6 @@ import WalletLink from "walletlink";
 import Web3 from 'web3';
 import { createAlchemyWeb3 } from '@alch/alchemy-web3';
 
-
-
 var account = null;
 var contract = null;
 var vaultcontract = null;
@@ -39,7 +37,7 @@ const providerOptions = {
 	walletlink: {
 		package: WalletLink, 
 		options: {
-		  appName: "Get3Dev NFT", 
+		  appName: "Net2Dev NFT Minter", 
 		  infuraId: "d9474e45763e4d1e9e349d1a4353ffa1",
 		  rpc: "", 
 		  chainId: 4, 
@@ -335,7 +333,7 @@ const refreshPage = ()=>{
               <div>
                 <h1 className="pt-2" style={{ fontWeight: "30" }}>NFT Minter</h1>
               </div>
-              <h3>{balance.result}/10000</h3>
+              <h3>{balance.result}/1000</h3>
               <h6>Your Wallet Address</h6>
               <div className="pb-3" id='wallet-address' style={{
                 color: "#39FF14",
@@ -519,4 +517,3 @@ const refreshPage = ()=>{
   }
 }
 export default App;
-
